@@ -1,0 +1,31 @@
+footer {
+  background-color: #333;
+  height: 300px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .content {
+    h2 {
+      font-size: 23px;
+      font-weight: 400;
+    }
+  }
+
+  .icons {
+    .i {
+      margin-right: 10px;
+    }
+    i {
+      color: White;
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.section-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1700px;
+  margin-block: 4rem;
+  margin-left: 100px;
+  gap: 3rem;
+
+  @media (max-width: 838px) {
+    margin-left: 0;
+  }
+}
+
+.container {
+  .card__header {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 15px;
+    img {
+      max-width: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+
+  .card {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 3px 2px 29px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 3px 2px 29px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 2px 29px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 1rem;
+    background: #a8a8a8;
+    background: linear-gradient(to right, #ffffff, #ece9e6);
+  }
+
+  .card__body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .tag {
+    align-self: flex-start;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    font-size: 0.75rem;
+  }
+  .tag-blue {
+    background: #56ccf2;
+    background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+    color: #fafafa;
+  }
+  .card__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+
+  .card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+  }
+
+  .user {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .user__image {
+    border-radius: 50%;
+  }
+  .user__info {
+    small {
+      color: #666;
+    }
+  }
+  button {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(255, 166, 0);
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+
+    &:hover {
+      opacity: 0.8;
+      background-color: rgb(255, 88, 88);
+    }
+  }
+}
