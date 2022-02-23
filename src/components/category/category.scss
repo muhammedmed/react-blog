@@ -9,7 +9,7 @@
     column-gap: 1rem;
 
     .filter-btn {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       font-weight: 500;
       cursor: pointer;
       border: none;
@@ -17,11 +17,6 @@
       text-transform: uppercase;
       height: 40px;
 
-      &:focus {
-        background-color: rgb(255, 166, 0);
-        color: rgb(255, 255, 255);
-        border-radius: 4px;
-      }
 
       @media (max-width: 530px) {
         font-size: 1rem;
@@ -29,4 +24,13 @@
       }
     }
   }
+}
+
+li{
+  list-style: none;
+}
+
+.active{
+  background-color:rgb(255, 166, 0);
+  border-radius: 6px;
 }
